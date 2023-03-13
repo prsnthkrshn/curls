@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+		
+		<!-- Map CSS -->
+		<link rel="stylesheet" href="./assets/css/mapbox-gl.css">
+		
+		<!-- Libs CSS -->
+		<link rel="stylesheet" href="./assets/css/libs.bundle.css">
+		
+		<!-- Theme CSS -->
+		<link rel="stylesheet" href="./assets/css/theme.bundle.css">
+		
+		<!-- Default Css -->
+		<link rel="stylesheet" href="./assets/css/theme.default.css">
+		
+		<!-- Title -->
+		<title>Terms & Conditions - Curl-s. | A easy way to Share URLs.</title>
+		
+		<!-- Cursor animation css -->
+		<style>
+			.row.top-padding-footer-credits {
+				padding-top: 3em;
+			}
+
+			.typed-cursor{
+			  opacity: 1;
+			}
+			
+			.typed-cursor.typed-cursor--blink{
+			  animation: typedjsBlink 0.7s infinite;
+			  -webkit-animation: typedjsBlink 0.7s infinite;
+					  animation: typedjsBlink 0.7s infinite;
+			}
+			
+			@keyframes typedjsBlink{
+			  50% { opacity: 0.0; }
+			}
+			
+			@-webkit-keyframes typedjsBlink{
+			  0% { opacity: 1; }
+			  50% { opacity: 0.0; }
+			  100% { opacity: 1; }
+			}
+		</style>
+	</head>
+	<body class="bg-light" data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0">
+
+    <!-- MODALS -->
+    <!-- Example -->
+    <div class="modal fade" id="modalExample" tabindex="-1" role="dialog" aria-labelledby="modalExampleTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <div class="text-center">
+              <img src="./terms_files/illustration-1.png" alt="..." class="img-fluid mb-3" style="width: 200px;">
+            </div>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalExampleTitle">
+              Schedule a demo with us
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              We can help you solve company communication.
+            </p>
+    
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- First name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationFirstNameModal" placeholder="First name">
+                    <label for="registrationFirstNameModal">First name</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Last name -->
+                  <div class="form-floating">
+                    <input type="text" class="form-control form-control-flush" id="registrationLastNameModal" placeholder="Last name">
+                    <label for="registrationLastNameModal">Last name</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+    
+                  <!-- Email -->
+                  <div class="form-floating">
+                    <input type="email" class="form-control form-control-flush" id="registrationEmailModal" placeholder="Email">
+                    <label for="registrationEmailModal">Email</label>
+                  </div>
+    
+                </div>
+                <div class="col-12 col-md-6">
+    
+                  <!-- Password -->
+                  <div class="form-floating">
+                    <input type="password" class="form-control form-control-flush" id="registrationPasswordModal" placeholder="Password">
+                    <label for="registrationPasswordModal">Password</label>
+                  </div>
+    
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+    
+                  <!-- Submit -->
+                  <button class="btn w-100 btn-primary mt-3 lift">
+                    Request a demo
+                  </button>
+    
+                </div>
+              </div>
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Horizontal  -->
+    <div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-8.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./terms_files/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"></path></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSignupHorizontalTitle">
+                    Sign Up
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSignupHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSignupHorizontalPassword">
+                        Create a password
+                      </label>
+                      <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign up
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Already have an account? <a href="https://landkit.goodthemes.co/signin-illustration.html">Log in</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signup: Vertical  -->
+    <div class="modal fade" id="modalSignupVertical" tabindex="-1" role="dialog" aria-labelledby="modalSignupVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./terms_files/photo-7.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSignupVerticalTitle">
+                Sign Up
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSignupVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSignupVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSignupVerticalPassword">
+                    Create a password
+                  </label>
+                  <input type="password" class="form-control" id="modalSignupVerticalPassword" placeholder="Create a password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign up
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Already have an account? <a href="https://landkit.goodthemes.co/signin-illustration.html">Log in</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Horizontal  -->
+    <div class="modal fade" id="modalSigninHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSigninHorizontalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card card-row">
+            <div class="row gx-0">
+              <div class="col-12 col-md-6 bg-cover card-img-start" style="background-image: url(./assets/img/photos/photo-1.jpg);">
+    
+                <!-- Image (placeholder) -->
+                <img src="./terms_files/photo-1.jpg" alt="..." class="img-fluid d-md-none invisible">
+    
+                <!-- Shape -->
+                <div class="shape shape-end shape-fluid-y text-white d-none d-md-block">
+                  <svg viewBox="0 0 112 690" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M116 0H51v172C76 384 0 517 0 517v173h116V0z" fill="currentColor"></path></svg>            </div>
+    
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="card-body">
+    
+                  <!-- Close -->
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+                  <!-- Heading -->
+                  <h2 class="mb-0 fw-bold text-center" id="modalSigninHorizontalTitle">
+                    Sign In
+                  </h2>
+    
+                  <!-- Text -->
+                  <p class="mb-6 text-center text-muted">
+                    Simplify your workflow in minutes.
+                  </p>
+    
+                  <!-- Form -->
+                  <form class="mb-6">
+    
+                    <!-- Email -->
+                    <div class="form-group">
+                      <label class="visually-hidden" for="modalSigninHorizontalEmail">
+                        Your email
+                      </label>
+                      <input type="email" class="form-control" id="modalSigninHorizontalEmail" placeholder="Your email">
+                    </div>
+    
+                    <!-- Password -->
+                    <div class="form-group mb-5">
+                      <label class="visually-hidden" for="modalSigninHorizontalPassword">
+                        Enter your password
+                      </label>
+                      <input type="password" class="form-control" id="modalSigninHorizontalPassword" placeholder="Enter your password">
+                    </div>
+    
+                    <!-- Submit -->
+                    <button class="btn w-100 btn-primary" type="submit">
+                      Sign in
+                    </button>
+    
+                  </form>
+    
+                  <!-- Text -->
+                  <p class="mb-0 fs-sm text-center text-muted">
+                    Don't have an account yet? <a href="https://landkit.goodthemes.co/signin-illustration.html">Sign up</a>.
+                  </p>
+    
+                </div>
+              </div>
+    
+            </div> <!-- / .row -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Signin: Vertical  -->
+    <div class="modal fade" id="modalSigninVertical" tabindex="-1" role="dialog" aria-labelledby="modalSigninVerticalTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="card">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Image -->
+            <img src="./terms_files/photo-21.jpg" alt="..." class="card-img-top">
+    
+            <!-- Shape -->
+            <div class="position-relative">
+              <div class="shape shape-bottom shape-fluid-x text-white">
+                <svg viewBox="0 0 2880 480" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M2160 0C1440 240 720 240 720 240H0v240h2880V0h-720z" fill="currentColor"></path></svg>          </div>
+            </div>
+    
+            <!-- Body -->
+            <div class="card-body">
+    
+              <!-- Heading -->
+              <h2 class="mb-0 fw-bold text-center" id="modalSigninVerticalTitle">
+                Sign In
+              </h2>
+    
+              <!-- Text -->
+              <p class="mb-6 text-center text-muted">
+                Simplify your workflow in minutes.
+              </p>
+    
+              <!-- Form -->
+              <form class="mb-6">
+    
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="visually-hidden" for="modalSigninVerticalEmail">
+                    Your email
+                  </label>
+                  <input type="email" class="form-control" id="modalSigninVerticalEmail" placeholder="Your email">
+                </div>
+    
+                <!-- Password -->
+                <div class="form-group mb-5">
+                  <label class="visually-hidden" for="modalSigninVerticalPassword">
+                    Enter your password
+                  </label>
+                  <input type="password" class="form-control" id="modalSigninVerticalPassword" placeholder="Enter your password">
+                </div>
+    
+                <!-- Submit -->
+                <button class="btn w-100 btn-primary" type="submit">
+                  Sign in
+                </button>
+    
+              </form>
+    
+              <!-- Text -->
+              <p class="mb-0 fs-sm text-center text-muted">
+                Don't have an account yet? <a href="https://landkit.goodthemes.co/signin-illustration.html">Sign up</a>.
+              </p>
+    
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Payment -->
+    <div class="modal fade" id="modalPayment" tabindex="-1" role="dialog" aria-labelledby="modalPaymentTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+    
+            <!-- Close -->
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <!-- Heading -->
+            <h2 class="fw-bold text-center mb-1" id="modalPaymentTitle">
+              Add Payment
+            </h2>
+    
+            <!-- Text -->
+            <p class="fs-lg text-center text-muted mb-6 mb-md-8">
+              Simplify your workflow in minutes.
+            </p>
+    
+            <!-- Form -->
+            <form>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentName">Name on card</label>
+                <input class="form-control" id="modalPaymentName" type="text" placeholder="First Last">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentNumbber">Card number</label>
+                <input class="form-control" id="modalPaymentNumbber" type="number" placeholder="4242 4242 4242 4242">
+              </div>
+    
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="modalPaymentDate">Exp. Date</label>
+                <input class="form-control" id="modalPaymentDate" type="text" placeholder="03/2023">
+              </div>
+    
+              <!-- Submit -->
+              <button class="btn w-100 btn-primary mt-3 lift">
+                Add Payment Method
+              </button>
+    
+            </form>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-white">
+		  <div class="container">
+		
+			<!-- Brand -->
+			<a class="navbar-brand" href="https://curl-s.in">
+			  <img src="./assets/img/title_logo.png" class="navbar-brand-img" alt="Curl-s.">
+			</a>
+		
+			<!-- Toggler -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" 
+					aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		
+			<!-- Collapse -->
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+			  <!-- Toggler -->
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+					data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" 
+					aria-expanded="false" aria-label="Toggle navigation">
+				<i class="fe fe-x"></i>
+			  </button>
+		
+			  <!-- Navigation -->
+			  <ul class="navbar-nav ms-auto">
+				
+				<li class="nav-item">
+				  <a class="nav-link" id="navbarAbout" href="about.html">About</a>
+				   
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="navbarContact" href="contact.html">
+					Contact
+				  </a>
+				  
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" id="navbarDocumentation" href="documentation.html">
+					Documentation
+				  </a>
+				  
+				</li>
+			  </ul>
+		
+			  <!-- Button -->
+			  <a class="btn btn-primary btn-sm lift navbar-btn" href="signin.html" target="_blank">Sign In / Up</a>
+		
+			</div>
+		
+		  </div>
+		</nav>
+
+		<!-- CONTENT -->
+		<section class="pt-8 pt-md-11 pb-8 pb-md-16">
+		  <div class="container">
+			<div class="row align-items-center">
+			  <div class="col-12 col-md">
+				<!-- Heading -->
+				<h1 class="display-4 mb-2">
+				  Terms of Service
+				</h1>
+			  </div>
+			  <div class="col-auto">
+				<!-- Buttons -->
+				<a href="https://landkit.goodthemes.co/terms-of-service.html#!" class="btn btn-primary-soft">
+				  Print
+				</a>
+			  </div>
+			</div> <!-- / .row -->
+			
+			<div class="row pt-md-5">
+			  <div class="col-12 col-md-8">
+
+				<p class="fs-lg text-gray-800 text-primary">Welcome to Curl-s!</p>
+
+				<p class="fs-lg text-gray-800">These terms and conditions outline the rules and regulations for the use of curls llp's Website, located at https://curl-s.in.</p>
+
+				<p class="">By accessing this website we assume you accept these terms and conditions. Do not continue to use Curl-s if you do not agree to take all of the terms and conditions stated on this page.</p>
+
+				<p class="fs-lg text-gray-800">The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this website and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of Netherlands. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.</p>
+
+				<h3 class="mb-5">Cookies</h3>
+
+				<p class="fs-lg text-gray-800">We employ the use of cookies. By accessing Curl-s, you agreed to use cookies in agreement with the curls llp's Privacy Policy. </p>
+
+				<p class="fs-lg text-gray-800">Most interactive websites use cookies to let us retrieve the user’s details for each visit. Cookies are used by our website to enable the functionality of certain areas to make it easier for people visiting our website. Some of our affiliate/advertising partners may also use cookies.</p>
+
+				<h3 class="mb-5">License</h3>
+
+				<p class="fs-lg text-gray-800">Unless otherwise stated, curls llp and/or its licensors own the intellectual property rights for all material on Curl-s. All intellectual property rights are reserved. You may access this from Curl-s for your own personal use subjected to restrictions set in these terms and conditions.</p>
+
+				<p class="fs-lg text-gray-800">You must not:</p>
+				<ul>
+					<li class="fs-5 text-gray-800">Republish material from Curl-s</li>
+					<li class="fs-5 text-gray-800">Sell, rent or sub-license material from Curl-s</li>
+					<li class="fs-5 text-gray-800">Reproduce, duplicate or copy material from Curl-s</li>
+					<li class="fs-5 text-gray-800">Redistribute content from Curl-s</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">Parts of this website offer an opportunity for users to post and exchange opinions and information in certain areas of the website. curls llp does not filter, edit, publish or review Comments prior to their presence on the website. Comments do not reflect the views and opinions of curls llp,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, curls llp shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this website.</p>
+
+				<p class="fs-lg text-gray-800">curls llp reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+
+				<p class="fs-lg text-gray-800">You warrant and represent that:</p>
+
+				<ul>
+					<li class="fs-5 text-gray-800">You are entitled to post the Comments on our website and have all necessary licenses and consents to do so;</li>
+					<li class="fs-5 text-gray-800">The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party;</li>
+					<li class="fs-5 text-gray-800">The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy</li>
+					<li class="fs-5 text-gray-800">The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">You hereby grant curls llp a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.</p>
+
+				<h3 class="mb-5">Hyperlinking to our Content</h3>
+
+				<p class="fs-lg text-gray-800">The following organizations may link to our Website without prior written approval:</p>
+
+				<ul>
+					<li class="fs-5 text-gray-800">Government agencies;</li>
+					<li class="fs-5 text-gray-800">Search engines;</li>
+					<li class="fs-5 text-gray-800">News organizations;</li>
+					<li class="fs-5 text-gray-800">Online directory distributors may link to our Website in the same manner as they hyperlink to the Websites of other listed businesses; and</li>
+					<li class="fs-5 text-gray-800">System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our Web site.</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">These organizations may link to our home page, to publications or to other Website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and (c) fits within the context of the linking party’s site.</p>
+
+				<p class="fs-lg text-gray-800">We may consider and approve other link requests from the following types of organizations:</p>
+
+				<ul>
+					<li class="fs-5 text-gray-800">commonly-known consumer and/or business information sources;</li>
+					<li class="fs-5 text-gray-800">dot.com community sites;</li>
+					<li class="fs-5 text-gray-800">associations or other groups representing charities;</li>
+					<li class="fs-5 text-gray-800">online directory distributors;</li>
+					<li class="fs-5 text-gray-800">internet portals;</li>
+					<li class="fs-5 text-gray-800">accounting, law and consulting firms; and</li>
+					<li class="fs-5 text-gray-800">educational institutions and trade associations.</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; (c) the benefit to us from the visibility of the hyperlink compensates the absence of curls llp; and (d) the link is in the context of general resource information.</p>
+
+				<p class="fs-lg text-gray-800">These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and (c) fits within the context of the linking party’s site.</p>
+
+				<p class="fs-lg text-gray-800">If you are one of the organizations listed in paragraph 2 above and are interested in linking to our website, you must inform us by sending an e-mail to curls llp. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our Website, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.</p>
+
+				<p class="fs-lg text-gray-800">Approved organizations may hyperlink to our Website as follows:</p>
+
+				<ul>
+					<li class="fs-5 text-gray-800">By use of our corporate name; or</li>
+					<li class="fs-5 text-gray-800">By use of the uniform resource locator being linked to; or</li>
+					<li class="fs-5 text-gray-800">By use of any other description of our Website being linked to that makes sense within the context and format of content on the linking party’s site.</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">No use of curls llp's logo or other artwork will be allowed for linking absent a trademark license agreement.</p>
+
+				<h3 class="mb-5">iFrames</h3>
+
+				<p class="fs-lg text-gray-800">Without prior approval and written permission, you may not create frames around our Webpages that alter in any way the visual presentation or appearance of our Website.</p>
+
+				<h3 class="mb-5">Content Liability</h3>
+
+				<p class="fs-lg text-gray-800">We shall not be hold responsible for any content that appears on your Website. You agree to protect and defend us against all claims that is rising on your Website. No link(s) should appear on any Website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+
+				<h3 class="mb-5">Your Privacy</h3>
+
+				<p class="fs-lg text-gray-800">Please read Privacy Policy</p>
+
+				<h3 class="mb-5">Reservation of Rights</h3>
+
+				<p class="fs-lg text-gray-800">We reserve the right to request that you remove all links or any particular link to our Website. You approve to immediately remove all links to our Website upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our Website, you agree to be bound to and follow these linking terms and conditions.</p>
+
+				<h3 class="mb-5">Removal of links from our website</h3>
+
+				<p class="fs-lg text-gray-800">If you find any link on our Website that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.</p>
+
+				<p class="fs-lg text-gray-800">We do not ensure that the information on this website is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the website remains available or that the material on the website is kept up to date.</p>
+
+				<h3 class="mb-5">Disclaimer</h3>
+
+				<p class="fs-lg text-gray-800">To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. Nothing in this disclaimer will:</p>
+
+				<ul>
+					<li class="fs-5 text-gray-800">limit or exclude our or your liability for death or personal injury;</li>
+					<li class="fs-5 text-gray-800">limit or exclude our or your liability for fraud or fraudulent misrepresentation;</li>
+					<li class="fs-5 text-gray-800">limit any of our or your liabilities in any way that is not permitted under applicable law; or</li>
+					<li class="fs-5 text-gray-800">exclude any of our or your liabilities that may not be excluded under applicable law.</li>
+				</ul>
+
+				<p class="fs-lg text-gray-800">The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph; and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.</p>
+
+				<p class="fs-lg text-gray-800">As long as the website and the information and services on the website are provided free of charge, we will not be liable for any loss or damage of any nature.</p>
+			  </div>
+			  <div class="col-12 col-md-4">
+
+				<!-- Card -->
+				<div class="card shadow-light-lg">
+				  <div class="card-body">
+
+					<!-- Heading -->
+					<h4>
+					  Have a question?
+					</h4>
+
+					<!-- Text -->
+					<p class="fs-sm text-gray-800 mb-5">
+					  Not sure exactly what we’re looking for or just want clarification? We’d be happy to chat with you and clear things up for you. Anytime!
+					</p>
+
+					<!-- Heading -->
+					<h6 class="fw-bold text-uppercase text-gray-700 mb-2">
+					  Call anytime
+					</h6>
+
+					<!-- Text -->
+					<p class="fs-sm mb-5">
+					  <a href="tel:+91-9493370134." class="text-reset">+91-94933 70134.</a>
+					</p>
+
+					<!-- Heading -->
+					<h6 class="fw-bold text-uppercase text-gray-700 mb-2">
+					  Email us
+					</h6>
+
+					<!-- Text -->
+					<p class="fs-sm mb-0">
+					  <a href="mailto:curlsllp@gmail.com" class="text-reset">curlsllp@gmail.com</a>
+					</p>
+
+				  </div>
+				</div>
+
+			  </div>
+			</div> <!-- / .row -->
+		  </div> <!-- / .container -->
+		</section>
+		
+		<!-- SHAPE -->
+		<div class="position-relative mt-n15">
+		  <div class="shape shape-bottom shape-fluid-x text-dark">
+			<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
+		</div>
+		
+		<!-- CTA -->
+		<section class="py-8 py-md-11 bg-dark">
+		  <div class="container">
+			<div class="row justify-content-center">
+			  <div class="col-12 col-md-10 col-lg-8 text-center">
+
+				<!-- Badge -->
+				<span class="badge rounded-pill bg-gray-700-soft mb-4">
+				  <span class="h6 fw-bold text-uppercase">Get started</span>
+				</span>
+
+				<!-- Heading -->
+				<h1 class="display-4 text-white">
+				  Get <span class="text-primary">Curl-s.</span> and save your time.
+				</h1>
+
+				<!-- Text -->
+				<p class="fs-lg text-muted mb-6 mb-md-8">
+				  Stop wasting time &amp; money on other app's for URL shorten. Curl-s is faster, easier, and you still have complete control.
+				</p>
+
+				<!-- Button -->
+				<a href="signup.html" target="_blank" class="btn btn-success lift">
+				  Sign up now <i class="fe fe-arrow-right"></i>
+				</a>
+
+			  </div>
+			</div> <!-- / .row -->
+		  </div> <!-- / .container -->
+		</section>
+		
+		<!-- SHAPE -->
+		<div class="position-relative">
+		  <div class="shape shape-bottom shape-fluid-x text-gray-200">
+			<svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"></path></svg>      </div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="py-8 py-md-11 bg-gray-200">
+		  <div class="container">
+			<div class="row">
+			  <div class="col-12 col-md-4 col-lg-3">
+		
+				<!-- Brand -->
+				<a class="navbar-brand" href="https://curl-s.in">
+				  <img src="./assets/img/title_logo.png" class="navbar-brand-img" alt="Curl-s." style="margin-left: -10px !important;">
+				</a>
+				<!-- <img src="./assets/img/brand.svg" alt="..." class="footer-brand img-fluid mb-2"> -->
+		
+				<!-- Text -->
+				<p class="text-gray-700 mb-2">
+				  A easy way to share URLs.
+				</p>
+		
+				<!-- Social -->
+				<ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+				  <li class="list-inline-item list-social-item me-3">
+					<a href="#" class="text-decoration-none">
+					  <img src="./assets/img/instagram.svg" class="list-social-icon" alt="...">
+					</a>
+				  </li>
+				  <li class="list-inline-item list-social-item me-3">
+					<a href="#" class="text-decoration-none">
+					  <img src="./assets/img/facebook.svg" class="list-social-icon" alt="...">
+					</a>
+				  </li>
+				  <li class="list-inline-item list-social-item me-3">
+					<a href="#" class="text-decoration-none">
+					  <img src="./assets/img/twitter.svg" class="list-social-icon" alt="...">
+					</a>
+				  </li>
+				  <li class="list-inline-item list-social-item">
+					<a href="#" class="text-decoration-none">
+					  <img src="./assets/img/pinterest.svg" class="list-social-icon" alt="Curl-s">
+					</a>
+				  </li>
+				</ul>
+		
+			  </div>
+			  
+			  <div class="col-md-4">
+		
+				<!-- Heading -->
+				<h6 class="fw-bold text-uppercase text-gray-700">
+				  Sitemap
+				</h6>
+		
+				<!-- List -->
+				<ul class="list-unstyled text-muted mb-0">
+				  <li class="mb-3">
+					<a href="documentation.html" class="text-reset">
+					  Documentation
+					</a>
+				  </li>
+				  <li class="mb-3">
+					<a href="term.html" class="text-reset">Terms &amp; conditions</a>
+				  </li>
+				  
+				</ul>
+		
+			  </div>
+			</div> <!-- / .row -->
+
+			<div class="row top-padding-footer-credits">          
+				<div class="col-12">
+					© 2020 - 2023. Design by <a href="https://uilabs.in">uiLabs LLP</a>. 
+					All right by <span class="p-2 text-bg-dark"> Curl-s &amp; uiLabs LLP</span>.
+				</div>
+			</div>
+		  </div> <!-- / .container -->
+		</footer>
+
+		<!-- JAVASCRIPT -->
+		<!-- Map JS -->
+		<script src="./assets/js/mapbox-gl.js.download"></script>
+		
+		<!-- Vendor JS -->
+		<script src="./assets/js/vendor.bundle.js.download"></script>
+		
+		<!-- Theme JS -->
+		<script src="./assets/js/theme.bundle.js.download"></script>
+	</body>
+</html>
