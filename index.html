@@ -33,9 +33,9 @@
 			}
 			
 			.typed-cursor.typed-cursor--blink{
-			  animation: typedjsBlink 0.7s infinite;
-			  -webkit-animation: typedjsBlink 0.7s infinite;
-					  animation: typedjsBlink 0.7s infinite;
+				animation: typedjsBlink 0.7s infinite;
+				-webkit-animation: typedjsBlink 0.7s infinite;
+				animation: typedjsBlink 0.7s infinite;
 			}
 			
 			@keyframes typedjsBlink{
@@ -46,6 +46,29 @@
 			  0% { opacity: 1; }
 			  50% { opacity: 0.0; }
 			  100% { opacity: 1; }
+			}
+
+			/* scroll bar css */
+			/* width */
+			::-webkit-scrollbar {
+				width: .5em;
+			}
+			
+			/* Track */
+			::-webkit-scrollbar-track {
+				box-shadow: inset 0 0 0px transparent; 
+				border-radius: 0px;
+			}
+			
+			/* Handle */
+			::-webkit-scrollbar-thumb {
+				background: linear-gradient(0deg, #FC466B 0%, #3F5EFB 100%);
+				border-radius: 0px;
+			}
+			
+			/* Handle on hover */
+			::-webkit-scrollbar-thumb:hover {
+				background: linear-gradient(0deg, #9ebd13 0%, #008552 100%);
 			}
 		</style>
 	</head>
@@ -78,28 +101,18 @@
 		
 			  <!-- Navigation -->
 			  <ul class="navbar-nav ms-auto">
-				
-				<li class="nav-item">
-				  <a class="nav-link" id="navbarAbout" href="about.html">About</a>
-				   
-				</li>
 				<li class="nav-item">
 				  <a class="nav-link" id="navbarContact" href="contact.html">
 					Contact
 				  </a>
-				  
 				</li>
+
 				<li class="nav-item">
-				  <a class="nav-link" id="navbarDocumentation" href="documentation.html">
-					Documentation
-				  </a>
-				  
+					<a href="createURL.html" id="getStarted" class="nav-link btn btn-primary shadow lift me-1" style="color: white;"> Get Started 
+						<i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
+					</a>
 				</li>
 			  </ul>
-		
-			  <!-- Button -->
-			  <a class="btn btn-primary btn-sm lift navbar-btn" href="signin.html" target="_blank">Sign In / Up</a>
-		
 			</div>
 		
 		  </div>
@@ -130,7 +143,7 @@
 
 				<!-- Buttons -->
 				<div class="text-center text-md-start">
-				  <a href="signup.html" class="btn btn-primary shadow lift me-1"> Sign up 
+				  <a href="createURL.html" class="btn btn-primary shadow lift me-1"> Get Started 
 					<i class="fe fe-arrow-right d-none d-md-inline ms-3"></i>
 				  </a>
 				  <a href="documentation.html" class="btn btn-primary-soft lift">
@@ -695,8 +708,8 @@
 				</p>
 
 				<!-- Button -->
-				<a href="signup.html" target="_blank" class="btn btn-success lift">
-				  Sign up now <i class="fe fe-arrow-right"></i>
+				<a href="createURL.html" target="_blank" class="btn btn-success lift">
+				  Get Started <i class="fe fe-arrow-right"></i>
 				</a>
 
 			  </div>
